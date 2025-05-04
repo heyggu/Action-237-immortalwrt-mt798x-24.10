@@ -17,3 +17,7 @@
 # echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 sed -i '1i src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main' feeds.conf.default
 sed -i '2i src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main' feeds.conf.default
+# natmapt
+git clone --depth 1 --branch master --single-branch https://github.com/muink/luci-app-natmapt.git package/luci-app-natmapt
+git clone --depth 1 --branch master --single-branch https://github.com/muink/openwrt-natmapt.git package/natmapt
+git clone --depth 1 --branch master --single-branch https://github.com/muink/openwrt-stuntman.git package/stuntman
