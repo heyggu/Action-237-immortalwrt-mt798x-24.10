@@ -11,16 +11,16 @@
 #
 
 # Modify default IP
-sed -i 's/192.168.6.1/192.168.6.254/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.82.1/192.168.82.254/g' package/base-files/files/bin/config_generate
 
 # Modify default theme
 #sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 
 # Modify hostname
-sed -i 's/ImmortalWrt/ImmortalWrt-24.10-AP-$(shell TZ="Asia/Shanghai" date +"%Y%m%d")/g' package/base-files/files/bin/config_generate
+sed -i 's/ImmortalWrt/ImmortalWrt-24.10-$(shell TZ="Asia/Shanghai" date +"%Y%m%d")/g' package/base-files/files/bin/config_generate
 
 # Modify filename, add date prefix
-sed -i 's|IMG_PREFIX:=|IMG_PREFIX:=AP-$(shell TZ="Asia/Shanghai" date +"%Y%m%d")-24.10|' include/image.mk
+sed -i 's|IMG_PREFIX:=|IMG_PREFIX:=CMCC-$(shell TZ="Asia/Shanghai" date +"%Y%m%d")-24.10|' include/image.mk
 
 # Insert two lines before the last line in 99-default-settings-chinese. For Modify opkg url, change mt7981 to filogic, del lines inlude passwall.
 # filesDAFA sed -i '/^exit 0$/i sed -i "s,mt7981,filogic,g" "package/base-files/files/etc/opkg/distfeeds.conf"\nsed -i '\''/passwall/d'\'' "package/base-files/files/etc/opkg/distfeeds.conf"' package/emortal/default-settings/files/99-default-settings-chinese
