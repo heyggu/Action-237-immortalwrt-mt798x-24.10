@@ -21,3 +21,5 @@ sed -i '2i src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;ma
 git clone --depth 1 --branch master --single-branch https://github.com/muink/luci-app-natmapt.git package/luci-app-natmapt
 git clone --depth 1 --branch master --single-branch https://github.com/muink/openwrt-natmapt.git package/natmapt
 git clone --depth 1 --branch master --single-branch https://github.com/muink/openwrt-stuntman.git package/stuntman
+# easytier
+git clone --depth 1 -b main https://github.com/EasyTier/luci-app-easytier.git package/package-easytier
