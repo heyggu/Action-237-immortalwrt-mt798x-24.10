@@ -21,3 +21,7 @@
 git clone --depth 1 --branch master --single-branch https://github.com/muink/luci-app-natmapt.git package/luci-app-natmapt
 git clone --depth 1 --branch master --single-branch https://github.com/muink/openwrt-natmapt.git package/natmapt
 git clone --depth 1 --branch master --single-branch https://github.com/muink/openwrt-stuntman.git package/stuntman
+# easytier
+git clone --depth 1 -b main https://github.com/EasyTier/luci-app-easytier.git package/package-easytier
+#tailscal
+git clone https://github.com/asvow/luci-app-tailscale.git package/luci-app-tailscale
