@@ -25,3 +25,8 @@ git clone --depth 1 --branch master --single-branch https://github.com/muink/ope
 git clone --depth 1 -b main https://github.com/EasyTier/luci-app-easytier.git package/package-easytier
 #tailscal
 git clone https://github.com/asvow/luci-app-tailscale.git package/luci-app-tailscale
+#fakehttp
+git clone https://github.com/yingziwu/openwrt-fakehttp.git package/fakehttp
+git clone https://github.com/yingziwu/luci-app-fakehttp.git package/luci-app-fakehttp
+#mihomo
+git clone https://github.com/nikkinikki-org/OpenWrt-nikki.git package/openwrt-nikki
