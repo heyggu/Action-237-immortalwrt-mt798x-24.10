@@ -30,3 +30,5 @@ git clone https://github.com/yingziwu/openwrt-fakehttp.git package/fakehttp
 git clone https://github.com/yingziwu/luci-app-fakehttp.git package/luci-app-fakehttp
 #mihomo
 git clone https://github.com/nikkinikki-org/OpenWrt-nikki.git package/openwrt-nikki
+#homeproxy
+git clone https://github.com/VIKINGYFY/homeproxy.git package/homeproxy
