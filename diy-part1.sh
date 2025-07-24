@@ -31,4 +31,4 @@ git clone https://github.com/yingziwu/luci-app-fakehttp.git package/luci-app-fak
 #mihomo
 git clone https://github.com/nikkinikki-org/OpenWrt-nikki.git package/openwrt-nikki
 #homeproxy
-git clone https://github.com/VIKINGYFY/homeproxy.git package/homeproxy
+git clone https://github.com/VIKINGYFY/homeproxy.git package/luci-app-homeproxy
