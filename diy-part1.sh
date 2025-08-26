@@ -28,6 +28,9 @@ git clone https://github.com/asvow/luci-app-tailscale.git package/luci-app-tails
 #fakehttp
 git clone https://github.com/yingziwu/openwrt-fakehttp.git package/fakehttp
 git clone https://github.com/yingziwu/luci-app-fakehttp.git package/luci-app-fakehttp
+#fakesip
+git clone https://github.com/blueberry-pie-11/openwrt-fakesip package/fakesip
+git clone https://github.com/blueberry-pie-11/luci-app-fakesip package/luci-app-fakesip
 #mihomo
 git clone https://github.com/nikkinikki-org/OpenWrt-nikki.git package/openwrt-nikki
 #homeproxy
