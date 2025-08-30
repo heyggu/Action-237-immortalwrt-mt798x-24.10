@@ -24,7 +24,7 @@ git clone --depth 1 --branch master --single-branch https://github.com/muink/ope
 # easytier
 git clone --depth 1 -b main https://github.com/EasyTier/luci-app-easytier.git package/package-easytier
 #tailscale
-#git clone https://github.com/asvow/luci-app-tailscale.git package/luci-app-tailscale
+git clone https://github.com/asvow/luci-app-tailscale.git package/luci-app-tailscale
 #fakehttp
 git clone https://github.com/yingziwu/openwrt-fakehttp.git package/fakehttp
 git clone https://github.com/yingziwu/luci-app-fakehttp.git package/luci-app-fakehttp
@@ -35,3 +35,4 @@ git clone https://github.com/blueberry-pie-11/luci-app-fakesip package/luci-app-
 git clone https://github.com/nikkinikki-org/OpenWrt-nikki.git package/openwrt-nikki
 #homeproxy
 #git clone https://github.com/VIKINGYFY/homeproxy.git package/luci-app-homeproxy
+git clone https://github.com/immortalwrt/homeproxy.git package/luci-app-homeproxy
