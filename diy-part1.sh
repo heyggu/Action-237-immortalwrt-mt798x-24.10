@@ -33,20 +33,20 @@ git clone https://github.com/blueberry-pie-11/openwrt-fakesip package/fakesip
 git clone https://github.com/blueberry-pie-11/luci-app-fakesip package/luci-app-fakesip
 #mihomo
 git clone https://github.com/nikkinikki-org/OpenWrt-nikki.git package/openwrt-nikki
-echo "src-git nikki https://github.com/nikkinikki-org/OpenWrt-nikki.git;main" >> "feeds.conf.default"
 #homeproxy
 git clone https://github.com/VIKINGYFY/homeproxy.git package/luci-app-homeproxy
 #git clone https://github.com/immortalwrt/homeproxy.git package/luci-app-homeproxy
 # 添加 rtp2httpd feed 源
 # 使用 main 最新代码：
 echo "src-git rtp2httpd https://github.com/stackia/rtp2httpd.git" >> feeds.conf.default
+echo "src-git nikki https://github.com/nikkinikki-org/OpenWrt-nikki.git;main" >> feeds.conf.default
 # 或者固定版本（推荐稳定）：
 # echo "src-git rtp2httpd https://github.com/stackia/rtp2httpd.git;v3.1.1" >> feeds.conf.default
 
 # 更新并安装 rtp2httpd feed
-./scripts/feeds update rtp2httpd
-./scripts/feeds install -a -p rtp2httpd
+#./scripts/feeds update rtp2httpd
+#./scripts/feeds install -a -p rtp2httpd
 
 # 添加 luci-app-rtp2httpd 与主程序 rtp2httpd
-echo "CONFIG_PACKAGE_rtp2httpd=y" >> .config
-echo "CONFIG_PACKAGE_luci-app-rtp2httpd=y" >> .config
+#echo "CONFIG_PACKAGE_rtp2httpd=y" >> .config
+#echo "CONFIG_PACKAGE_luci-app-rtp2httpd=y" >> .config
