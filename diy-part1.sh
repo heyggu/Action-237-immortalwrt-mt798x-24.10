@@ -33,6 +33,7 @@ git clone https://github.com/blueberry-pie-11/openwrt-fakesip package/fakesip
 git clone https://github.com/blueberry-pie-11/luci-app-fakesip package/luci-app-fakesip
 #mihomo
 git clone https://github.com/nikkinikki-org/OpenWrt-nikki.git package/openwrt-nikki
+echo "src-git nikki https://github.com/nikkinikki-org/OpenWrt-nikki.git;main" >> "feeds.conf.default"
 #homeproxy
 git clone https://github.com/VIKINGYFY/homeproxy.git package/luci-app-homeproxy
 #git clone https://github.com/immortalwrt/homeproxy.git package/luci-app-homeproxy
