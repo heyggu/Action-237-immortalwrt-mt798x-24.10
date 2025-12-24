@@ -18,8 +18,10 @@
 # echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 # echo 'src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages' >>feeds.conf.default
 # natmapt
-git clone --depth 1 --branch master --single-branch https://github.com/muink/luci-app-natmapt.git package/luci-app-natmapt
-git clone --depth 1 --branch master --single-branch https://github.com/muink/openwrt-natmapt.git package/natmapt
+#git clone #git clone --depth 1 --branch master --single-branch https://github.com/muink/luci-app-natmapt.git package/luci-
+#git clone #git clone --depth 1 --branch master --single-branch https://github.com/muink/openwrt-natmapt.git pack
+git clone --depth 1 --branch master --single-branch https://github.com/heyggu/luci-app-natmapt.git package/luci-app-natmapt
+git clone --depth 1 --branch master --single-branch https://github.com/heyggu/openwrt-natmapt.git package/natmapt
 git clone --depth 1 --branch master --single-branch https://github.com/muink/openwrt-stuntman.git package/stuntman
 # easytier
 git clone --depth 1 -b main https://github.com/EasyTier/luci-app-easytier.git package/package-easytier
