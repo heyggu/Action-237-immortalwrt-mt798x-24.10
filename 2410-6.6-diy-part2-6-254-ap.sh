@@ -24,3 +24,11 @@ sed -i 's|IMG_PREFIX:=|IMG_PREFIX:=AP-$(shell TZ="Asia/Shanghai" date +"%Y%m%d")
 
 # Insert two lines before the last line in 99-default-settings-chinese. For Modify opkg url, change mt7981 to filogic, del lines inlude passwall.
 # filesDAFA sed -i '/^exit 0$/i sed -i "s,mt7981,filogic,g" "package/base-files/files/etc/opkg/distfeeds.conf"\nsed -i '\''/passwall/d'\'' "package/base-files/files/etc/opkg/distfeeds.conf"' package/emortal/default-settings/files/99-default-settings-chinese
+# 1. 删除 feeds 中旧的 golang
+rm -rf feeds/packages/lang/golang
+
+# 2. 拉取最新的 golang 
+git clone https://github.com/sbwml/packages_lang_golang -b 24.x feeds/packages/lang/golang
+
+# 3. 重新安装 golang 包以更新索引
+./scripts/feeds install -p packages golang
