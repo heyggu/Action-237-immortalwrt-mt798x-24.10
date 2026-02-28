@@ -28,7 +28,7 @@ sed -i 's|IMG_PREFIX:=|IMG_PREFIX:=AP-$(shell TZ="Asia/Shanghai" date +"%Y%m%d")
 rm -rf feeds/packages/lang/golang
 
 # 2. 拉取最新的 golang 
-git clone https://github.com/sbwml/packages_lang_golang -b 24.x feeds/packages/lang/golang
+git clone https://github.com/sbwml/packages_lang_golang -b 26.x feeds/packages/lang/golang
 
 # 3. 重新安装 golang 包以更新索引
 ./scripts/feeds install -p packages golang
