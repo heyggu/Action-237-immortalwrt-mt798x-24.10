@@ -32,3 +32,11 @@ git clone https://github.com/sbwml/packages_lang_golang -b 26.x feeds/packages/l
 
 # 3. 重新安装 golang 包以更新索引
 ./scripts/feeds install -p packages golang
+# UPX 
+upx_latest_ver=$(curl -s https://api.github.com/repos/upx/upx/releases/latest | grep 'tag_name' | cut -d\" -f4)
+upx_ver_num=${upx_latest_ver#v}
+upx_url="https://github.com/upx/upx/releases/download/${upx_latest_ver}/upx-${upx_ver_num}-amd64_linux.tar.xz"
+echo "Downloading UPX ${upx_latest_ver} from ${upx_url} ..."
+mkdir -p upx
+curl -L "$upx_url" | tar -xJ -C upx --strip-components=1
+chmod +x upx/upx
