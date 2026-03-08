@@ -61,19 +61,26 @@ jobs:
           tail -n 20 "$TS_MAKEFILE"
           echo "-------------------------------------"
 
-      - name: Update Feeds
+      - name: Update Feeds & Configure
         working-directory: sdk
+        env:
+          TERM: linux
         run: |
-          # 只需要安装编译 Tailscale 所需的依赖
           ./scripts/feeds update -a
           ./scripts/feeds install -a
+          
+          make defconfig
+
+          echo "CONFIG_PACKAGE_tailscale=m" >> .config
+          make defconfig
 
       - name: Compile Tailscale
         working-directory: sdk
+        env:
+          TERM: linux
         run: |
           echo "Starting compilation..."
-          # V=s 显示详细日志，方便排错
-          make package/tailscale/compile V=s
+          make package/tailscale/compile V=s IGNORE_ERRORS=1
 
       - name: Check Artifacts
         working-directory: sdk
