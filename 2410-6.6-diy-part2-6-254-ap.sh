@@ -32,6 +32,8 @@ git clone https://github.com/sbwml/packages_lang_golang -b 26.x feeds/packages/l
 
 # 3. 重新安装 golang 包以更新索引
 ./scripts/feeds install -p packages golang
+sed -i '/\/builder/d' package/tailscale/Makefile
+
 # UPX 
 upx_latest_ver=$(curl -s https://api.github.com/repos/upx/upx/releases/latest | grep 'tag_name' | cut -d\" -f4)
 upx_ver_num=${upx_latest_ver#v}
