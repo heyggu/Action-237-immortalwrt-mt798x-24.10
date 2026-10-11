@@ -27,8 +27,8 @@ git clone --depth 1 --branch master --single-branch https://github.com/muink/ope
 git clone --depth 1 -b main https://github.com/EasyTier/luci-app-easytier.git package/package-easytier
 #tailscale
 #git clone https://github.com/asvow/luci-app-tailscale.git package/luci-app-tailscale
-#git clone https://github.com/GuNanOvO/openwrt-tailscale.git package/tailscale
-git clone https://github.com/heyggu/openwrt-tailscale.git package/tailscale
+git clone https://github.com/GuNanOvO/openwrt-tailscale.git package/tailscale
+#git clone https://github.com/heyggu/openwrt-tailscale.git package/tailscale
 #sed -i 's/ts_omit_relayserver,//g' package/tailscale/Makefile
 git clone https://github.com/Tokisaki-Galaxy/luci-app-tailscale-community.git package/luci-app-tailscale-community
 
